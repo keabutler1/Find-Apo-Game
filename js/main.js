@@ -1,8 +1,13 @@
-var timer = $("timer");
+// establish the variables
 var startButton = $("#startButton");
-var playerOneScore = $("playerOneScore")
-var playerTwoScore =$("playerOneScore")
-var img = $("Apo")
+var timer = $("#timer");
+var playerOneScore = $("#playerOneScore")
+var playerTwoScore =$("#playerOneScore")
+var img = $("apo")
+var gameGrid = $("gameGrid")
+var gridBox = $("eachBox")
+var gridBox4 = $("instructionBox")
+
 
 // As a user, after I click the start button, the timer should start going down from 60 to zero in one second intervals.
 

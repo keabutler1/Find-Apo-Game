@@ -5,37 +5,76 @@ h1 {
     border-style: double; 
     border-width: 15px;
 }
-
 h2, h3 {
-    font-family: 'Abril Fatface'; color: olivedrab; Font-size: solid;
+    font-family: 'Abril Fatface'; 
+    color: olivedrab; 
+    Font-size: solid;
 }
 #startButton {
-    text-align: left; font-family: 'Abril Fatface'; background-color: red; border: black; margin: 10px;  padding: 10px; text-transform: uppercase; font-size: bold; font-weight: 400;
+    text-align: left;
+     font-family: 'Abril Fatface';
+      background-color: red; 
+      border: black; 
+      margin: 10px;  
+      padding: 10px; 
+      text-transform: uppercase; 
+      font-size: bold;
+       font-weight: 400;
 }
 #timer {
-  font-family: 'Abril Fatface'; background-color: whitesmoke; margin: 10px; padding: 5px; text-transform: uppercase;
+  font-family: 'Abril Fatface'; 
+  background-color: whitesmoke; 
+  margin: 10px; 
+  padding: 5px; 
+  text-transform: uppercase;
 }
 #player-one-score {
-    font-family: 'Abril Fatface'; background-color: olivedrab; margin: 10px; padding: 5px; text-transform: uppercase;
+    font-family: 'Abril Fatface'; 
+    background-color: olivedrab;
+    margin: 10px;
+    padding: 5px; 
+    text-transform: uppercase;
 }
 #player-two-score {
-    font-family: 'Abril Fatface'; background-color: olivedrab; margin: 10px; padding: 5px; text-transform: uppercase;
+    font-family: 'Abril Fatface'; 
+    background-color: olivedrab;
+    margin: 10px; 
+    padding: 5px; 
+    text-transform: uppercase;
 }
 .game-grid { 
-    display: grid; padding: 15px; background-color: midnightblue; grid-template-columns: auto auto auto auto;
+    display: grid; 
+    padding: 15px; 
+    background-color: midnightblue;
+    grid-template-columns: auto auto auto auto;
 }
  .grid-box {
-    display: grid; background-color: olivedrab; padding: 70px; margin: 2px; text-align: center; border: 0 auto;
+    display: grid; 
+    background-color: olivedrab; 
+    padding: 70px; 
+    margin: 2px; 
+    text-align: center;
+    border: 0 auto;
 }  
 html {
- margin: 15px; border-style: solid; border-width: medium; border-color: black; background-color: black;
+ margin: 15px; 
+ border-style: solid;
+ border-width: medium;
+ border-color: black; 
+ background-color: black;
 }
 section {
-     display: grid; padding: 20px; margin: 18px;
+     display: grid; 
+     padding: 20px; 
+     margin: 18px;
 } 
 p {
-color: olivedrab; font-family: 'Abril Fatface';
+color: olivedrab; 
+font-family: 'Abril Fatface';
 }
 .grid-box4 {
-    color: olivedrab; text: bold; font-family: 'Abril Fatface'; padding: auto; text-align: justify;
+    color: olivedrab;
+    font-family: 'Abril Fatface'; 
+    padding: auto; 
+    text-align: justify;
 }
