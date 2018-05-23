@@ -8,6 +8,7 @@ var $boxes = $(".grid-box");
 var $img = $('<img>').attr("src", "https://i.imgur.com/OSpAWBJb.jpg");
 var $imgVilian = $('<img>').attr("src", "https://i.imgur.com/RICLpn3b.jpg");
 var $gridBox4 = $(".grid-box4");
+var number = 5;
 //  specific game variables
 // let p1score;
 // let p2score;
@@ -31,25 +32,45 @@ function getSet() {
 
 // }
 // timer goes down from 30 to zero in one second intervals.
-  var number = 30;
-  function countdown() {
-    setTimeout(countdown, 1000)
-    $('#timer').html("" + number);
-    number --;
-    if(number < 0) {
-        alert('We Have A Winner!')
-    }
-}
+//   function countdown() {
+//     setTimeout(countdown, 1000)
+//     $('#timer').html("" + number);
+//     number --;
+//     if(number < 0) {
+//         alert('We Have A Winner!')
+//     }
+// }
  $("imgVilian").hide(); 
  $("img").hide();
  // this function will start the game once the start button is pressed
 $('#startButton').click(function() {
     console.log("Play Game");
-    countdown();
+    // countdown();
+    const interval = setInterval(function() {
+        $('#timer').html("" + number);
+        var randomHole = Math.floor(Math.random() * $boxes.length);
+        $boxes[randomHole].append($img[0]);
+        if (number === 0) {
+            clearInterval(interval);
+        }
+        number--;
+        }, 1000)
     // .append = make the img appear within the grid 
-    $($boxes[5]).append($img);
-    $($boxes[1]).append($imgVilian);
+    // $($boxes[5]).append($img);
+    // $($boxes[1]).append($imgVilian);
 });
+
+var countDown = function() {
+    $('#timer').html("" + number);
+    number--;
+    var randomHole = Math.floor(Math.random() * $boxes.length);
+    $boxes[randomHole].append($img[0]);
+    if (number === 0) {
+        debugger
+        // clearInterval(interval);
+    }
+}
+
 // make img move
 $($boxes).click(function() {
 alert('1 Point');
