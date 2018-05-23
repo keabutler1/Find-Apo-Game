@@ -44,20 +44,20 @@ h2, h3 {
 }
 .game-grid { 
     display: grid; 
-    padding: 15px; 
-    background-color: midnightblue;
+    /* padding: auto;  */
+    background-color: black; 
     grid-template-columns: auto auto auto auto;
 }
  .grid-box {
     display: grid; 
     background-color: olivedrab; 
     padding: 70px; 
-    margin: 2px; 
+    margin: 2px;   
     text-align: center;
     border: 0 auto;
 }  
 html {
- margin: 15px; 
+ margin: auto; 
  border-style: solid;
  border-width: medium;
  border-color: black; 
@@ -77,4 +77,7 @@ font-family: 'Abril Fatface';
     font-family: 'Abril Fatface'; 
     padding: auto; 
     text-align: justify;
-}
+};
+img {
+display: absolute;
+};
