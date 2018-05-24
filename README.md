@@ -13,17 +13,14 @@ The object of the game is to find Apo. There are two players who will alternate 
 Player Controls
 Use the mouse to click on a box to check if Apo is inside of it. 
 
-Screenshots of finished game
-
 Technologies Used:
 HTML, CSS, jQuery, and Javascript.
 
 Resources
-Milanote, Invision, MDN, Cole Steel Udemy WebDev Course, Google Search Engine, Google Fonts, Github, W3schools, Wdi_58 notes, Slack, and Visual Studio Code. 
+Milanote, Invision, MDN, Cole Steel Udemy WebDev Course, Google Search Engine, Google Fonts, Github, W3schools, Wdi_58 notes, Slack, and Visual Studio Code, Professor Zac, Professor Phillipe. 
 
-A wireframe of the initial idea. You could take a screenshot of a wireframe 
+A Backlog:
+A major hurdle that I fasted was to make the timer function and the pieces move simultaneosly. Also implementing two players and a scoreboard was challenging. 
 
-A Backlog: Descriptions of any unsolved problems or major hurdles you had to overcome.
-
-Bonus: the process mapped out!
+Bonus: please refer to my wireframes folder their is a pdf file that explains my process. 
 
