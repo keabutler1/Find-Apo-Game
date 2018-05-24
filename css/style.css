@@ -1,15 +1,16 @@
 h1 {
     font-family: 'Abril Fatface'; 
-    color: midnightblue; 
-     background-color: olivedrab;  
-    border-style: double; 
-    border-width: 15px;
+    color: olivedrab; 
+    background: linear-gradient(to bottom, #006600 0%, #003399 100%);
+      /* background-color: midnightblue;    */
+    /* border-style: solid;  */
 }
 h2, h3 {
     font-family: 'Abril Fatface'; 
     color: midnightblue; 
     Font-size: solid;
-    
+    background-color: black;   
+    border-style: bold; 
 }
 #startButton {
     text-align: left;
@@ -21,6 +22,7 @@ h2, h3 {
       text-transform: uppercase; 
       font-size: bold;
       font-weight: thick;
+      color: midnightblue;
 }
 nav {
     background-color: black;
@@ -34,7 +36,7 @@ nav {
   padding: 12px; 
   text-transform: uppercase;
 }
-#player-one-score {
+#playerOneScore {
     font-family: 'Abril Fatface'; 
     background-color: yellow;
     color: midnightblue;
@@ -65,13 +67,15 @@ nav {
      padding: 15px; 
       text-align: center; 
      margin: 2px; 
+     background: linear-gradient(to bottom, #006600 0%, #003399 100%);
 }  
 html {
  margin: auto; 
  border-style: solid;
  border-width: medium;
- border-color: black; 
- background-color: black;
+  border-color: black; 
+ background-color: black; 
+ 
 }
 section {
      display: grid; 

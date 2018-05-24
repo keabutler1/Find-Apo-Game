@@ -1,4 +1,3 @@
-
 // establish the variables
 var startButton = $("#startButton");
 var timer = $("#timer");
@@ -19,15 +18,6 @@ function getSet() {
    p2score = 0;
   };
     
-// // this function will keep track of player 1's score
-// function scoreplUno() {
-
-// }
-// // this function will keep track of player 2's score
-// function scorepldos() {
-
-// }
- 
  $("img").hide();
  $("imgVilian").hide(); 
  // this function will start the game once the start button is pressed
@@ -35,21 +25,23 @@ $('#startButton').click(function() {
     console.log("Play Game");
     const interval = setInterval(function() {
         $('#timer').html("" + number);
-        var randomHole = Math.floor(Math.random() * $boxes.length);
-          $boxes[randomHole].append($img[0]);
+        var randomBox = Math.floor(Math.random() * $boxes.length);
+          $boxes[randomBox].append($img[0]);
         if (number === 0) {
             clearInterval(interval);
         }
         number--;
-        }, 300)
+        }, 2000)
     });
      $boxes.append($imgVilian[0])
-
+    
 
 $($img).click(function() {
  alert('1 Point');
+ $($p1score).innertext = 1
 });
+
 $($boxes).click(function() {
  alert('DANGER');
-($boxes).slideUp(3000).slideDown(5000);
+ ($boxes).slideUp(3000).slideDown(5000);
 });
