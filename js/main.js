@@ -6,23 +6,20 @@ var playerOneScore = $("#p1score");
 var playerTwoScore =$("#p2score");
 var $boxes = $(".grid-box");
 var $img = $('<img>').attr("src", "https://i.imgur.com/OSpAWBJb.jpg");
-var $imgVilian = $('<img>').attr("src", "https://i.imgur.com/RICLpn3b.jpg");
-var $gridBox4 = $(".grid-box4");
-var number = 5;
+var $imgVilian = $('<img>').attr("src", "https://i.imgur.com/A0aFviSb.png");
+var $gridBoxl = $(".grid-box4");
+var $audio = $('<audio>').attr("audio/Queen - We Are The Champions (Lyrics) (1) (mp3cut.net).mp3");
+var number = 60;
 //  specific game variables
 // let p1score;
 // let p2score;
 // //functions to get the game running but not started yet
-function getSet() {
-     p1score = 0;
-     p2score = 0;
-    timer = 30
-}
+// function getSet() {
+//      p1score = 0;
+//      p2score = 0;
+//     timer = 30
+// }
     
-// this function will make Apo move around the boxes
-//every half second I want the img to move
-// setinterval (500 milsecs)
-
 // // this function will keep track of player 1's score
 // function scoreplUno() {
 
@@ -31,69 +28,32 @@ function getSet() {
 // function scorepldos() {
 
 // }
-// timer goes down from 30 to zero in one second intervals.
-//   function countdown() {
-//     setTimeout(countdown, 1000)
-//     $('#timer').html("" + number);
-//     number --;
-//     if(number < 0) {
-//         alert('We Have A Winner!')
-//     }
-// }
- $("imgVilian").hide(); 
+ 
  $("img").hide();
+ $("imgVilian").hide(); 
  // this function will start the game once the start button is pressed
 $('#startButton').click(function() {
     console.log("Play Game");
-    // countdown();
     const interval = setInterval(function() {
         $('#timer').html("" + number);
         var randomHole = Math.floor(Math.random() * $boxes.length);
-        $boxes[randomHole].append($img[0]);
+          $boxes[randomHole].append($img[0]);
         if (number === 0) {
             clearInterval(interval);
         }
         number--;
-        }, 1000)
-    // .append = make the img appear within the grid 
-    // $($boxes[5]).append($img);
-    // $($boxes[1]).append($imgVilian);
-});
+        }, 400)
+    });
+     $boxes.append($imgVilian[0])
 
-var countDown = function() {
-    $('#timer').html("" + number);
-    number--;
-    var randomHole = Math.floor(Math.random() * $boxes.length);
-    $boxes[randomHole].append($img[0]);
-    if (number === 0) {
-        debugger
-        // clearInterval(interval);
-    }
-}
-
-// make img move
-$($boxes).click(function() {
-alert('1 Point');
+     
+$($img).click(function() {
+ alert('1 Point');
 ($img).fadeOut();
-($imgVilian).fadeOut();
 ($gridBox4).fadeOut();
+
 });
-// function randomBox () {
-//  $($boxes) [math.floor(math.random() * (boxes.length -1))]
-// };
-function moveApo() {
-    $($boxes) = randomBox();
-    $($boxes[5]).append($img);
-};
-
-
-
-// function scoreBoard() {
-//      setTimeout(countdown, 500)
-//     $('#pl1score').html("" + number);
-//      number ++;
-//     if(number < 0);
-// };
-  
-
-
+$($imgVilian).click(function() {
+console.log('-2 points');
+($imgVilian).fadeOut();
+});
