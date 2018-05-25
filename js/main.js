@@ -37,7 +37,7 @@ function switchTurns() {
             alert("Tie game!")
         }
     }
-}     
+}  
 // any time this function is run, with a provided number
 // the current player will have their score added by that number
 // (positive OR negative)
@@ -79,14 +79,3 @@ $('#startButton').click(function() {
     console.log("-1 Point")
     updateScore(-1)
 }); 
-// 1. figure out everything that needs to be "reset" and the function to reset the game
-// resetGame();
-//     function resetGame() {
-//         player1.score = 0;
-//         player2.score = 0;
-//         $timer = 0;
-// }
-
-
-// 2. Figure out why sometimes the image is glitchy...
-// Still remains to be completed
