@@ -26,7 +26,9 @@ function switchTurns() {
         currentPlayer = player2
         alert("Player 2, you're up. Click start to begin...")
         number = 15
-    } else {
+    } 
+    // DECLARE WINNER 
+    else {
             if(player1.score > player2.score) {
             alert("Player 1 Wins!!")
     } else if(player2.score > player1.score) {
@@ -58,7 +60,8 @@ $('#startButton').click(function() {
     $boxes[randomBox].append($img[0]);
     if (number === 0) {
     clearInterval(interval);
-    switchTurns(// intro next player with animation
+    switchTurns(
+        // intro next player with animation
     $($boxes).slideUp(3000).slideDown(5000))
         }
         number--;
@@ -75,17 +78,15 @@ $('#startButton').click(function() {
     $('.villain').click(function() {
     console.log("-1 Point")
     updateScore(-1)
-});
-    function resetGame() {
+}); 
+// 1. figure out everything that needs to be "reset" and the function to reset the game
+// resetGame();
+//     function resetGame() {
+//         player1.score = 0;
+//         player2.score = 0;
+//         $timer = 0;
+// }
 
-}
 
-// 1.Done DECLARE WINNER (find where "GAME OVER" is being alerted to know where to put your code...)
 // 2. Figure out why sometimes the image is glitchy...
-// 3.Done Figure out where to put the animation line within switch turns...
-
-// ADD A RESET BUTTON:
-// 1. figure out everything that needs to be "reset" 
-// -Timer, Score, Images, Boxes
-// 2. make a function called 'reset' that's easy to call at the right place that
-// will do all of those things...
+// Still remains to be completed
